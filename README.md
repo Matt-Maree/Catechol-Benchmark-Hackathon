@@ -1,6 +1,6 @@
 # Catechol Reaction Yield Prediction
 
-This repository contains a machine-learning pipeline for predicting **reaction yields** for catechol chemistry using experimental reaction conditions and molecular descriptors.
+This repository contains a machine-learning pipeline for predicting **reaction yields** for catechol chemistry using experimental reaction conditions and molecular descriptors. 
 
 The goal of the project is to model reaction yield as a regression problem, using a combination of:
 - Reaction conditions
@@ -8,6 +8,9 @@ The goal of the project is to model reaction yield as a regression problem, usin
 - Ensemble machine-learning models
 
 Both **single-solvent** and **mixed-solvent** reaction datasets are supported.
+
+This project is part of of my solution for the Catechol Benchmark Hackathon (NeurIPS 2025 DnB) hosted on Kaggle. 
+Catechol Benchmark Hackathon (NeurIPS 2025 DnB)
 
 ---
 
