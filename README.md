@@ -72,7 +72,7 @@ At a high level, my solution does the following:
 
    - Output post-processing:
       - All predicted yields are clipped at a minimum value of 0 (negative yields are chemically impossible)
-      - If the sum of the three yields exceeds 1, the values are rescaled so that their sum equals 1 (combined yield of material greater than 1 is chemically impossible) 
+      - If the sum of the three yields exceeds 1, the values are rescaled so that their sum equals 1 (a total yield of above 1 is chemically impossible) 
       
    - Model optimization:
       - Hyperparameters for all models, both single-solvent and multi-solvent, were tuned offline using GridSearchCV on a cross-validation subset
@@ -91,7 +91,7 @@ At a high level, my solution does the following:
      - Leave-one-solvent-out for the single-solvent task
      - Leave-one-ramp-out splits for the full task
    - Evaluation metric: RMSE on held-out validation folds (final ensemble model obtained an RMSE of 0.08825 on the combined evaluation of the single-solvent and multi-solvent tasks)
-   - The final ensemble scores are competitive with the top Kaggle leaderboard entries.
+   - The final ensemble scores are competitive with the top Kaggle leaderboard entries
 
 ## Reproducibility Notes
    - All data loading and utility functions come from the official Kaggle competition package
